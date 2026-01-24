@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export', // This is the key line
-  basePath: '/Class-Note',
-  assetPrefix: '/Class-Note',
+  basePath: '/Class-Note/my-class-note',
+  assetPrefix: '/Class-Note/my-class-note',
   images: {
     unoptimized: true, // GitHub Pages doesn't support Next.js Image Optimization
   },
