@@ -1,15 +1,16 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export', // This is the key line
-  basePath: '/Class-Note',
-  assetPrefix: '/Class-Note',
+  output: 'export',
+  // Use the prefix ONLY when building for GitHub Pages
+  basePath: isProd ? '/Class-Note' : '',
+  assetPrefix: isProd ? '/Class-Note' : '',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // GitHub Pages doesn't support Next.js Image Optimization
+    unoptimized: true,
   },
-  // If your repo is NOT hunlin99.github.io, you need the line below:
-  // basePath: '/Class-Note',
 };
 
 export default nextConfig;

@@ -1,3 +1,5 @@
+import BackBtn from "../components/back-btn"
+
 const links = [
     { name: 'Session Overview', href: '#overview' },
     { name: 'Arrays (Basics)', href: '#arrays-basics' },
@@ -30,9 +32,7 @@ export default function Example() {
                     className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
                 />
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <a href="/">
-                        <button type="button" className="text-white mb-4">&larr; Back to home</button>
-                    </a>
+                    <BackBtn/>
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
                             Swift Fundamentals — Session 2 (Collections)

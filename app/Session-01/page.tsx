@@ -1,3 +1,5 @@
+import BackBtn from "../components/back-btn"
+
 const links = [
     { name: 'Variables and Constants', href: '#variables-constants' },
     { name: 'Type Safety & Type Inference', href: '#type-safety-inference' },
@@ -22,9 +24,7 @@ export default function Example() {
                 />
 
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <a href="/">
-                        <button type="button" className="text-white mb-4">&larr; Back to home</button>
-                    </a>
+                    <BackBtn/>
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
                             Swift Fundamentals — Week 01 Class
